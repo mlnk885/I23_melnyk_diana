@@ -1,0 +1,12 @@
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+app-header,
+app-main,
+app-footer {
+  display: block;
+}

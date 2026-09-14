@@ -1,0 +1,17 @@
+.main {
+  padding: 25px;
+  margin-top: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.main h2 {
+  color: #111827;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 15px;
+  background: #dcfce7;
+  border-radius: 8px;
+}

@@ -1,0 +1,19 @@
+<main class="main">
+  <h2>Головний компонент</h2>
+
+  <p>
+    Тут демонструється взаємодія між батьківським і дочірнім компонентами.
+  </p>
+
+  <app-child
+    [message]="childMessage"
+    (messageEvent)="receiveMessage($event)">
+  </app-child>
+
+  @if (receivedMessage) {
+    <div class="message">
+      <strong>Відповідь від Child:</strong>
+      {{ receivedMessage }}
+    </div>
+  }
+</main>
