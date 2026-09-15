@@ -1,0 +1,60 @@
+<div class="container">
+  <h1>Каталог товарів</h1>
+
+  <p class="counter">Всього товарів: {{ products.length }}</p>
+
+  <div class="form">
+    <h2>Додати товар</h2>
+
+    <input
+      type="text"
+      placeholder="Назва товару"
+      [(ngModel)]="newProduct.name"
+    />
+
+    <input
+      type="number"
+      placeholder="Ціна"
+      [(ngModel)]="newProduct.price"
+    />
+
+    <input
+      type="number"
+      placeholder="Кількість"
+      [(ngModel)]="newProduct.quantity"
+    />
+
+    <button
+      (click)="addProduct()"
+      [disabled]="!newProduct.name.trim()"
+    >
+      Додати товар
+    </button>
+  </div>
+
+  <div class="products">
+    <div
+      class="product"
+      *ngFor="let product of products; let i = index"
+      [ngClass]="product.quantity > 0 ? 'available' : 'unavailable'"
+    >
+      <h2>{{ product.name }}</h2>
+
+      <p>Ціна: {{ product.price }} грн</p>
+
+      <p>Кількість: {{ product.quantity }}</p>
+
+      <p *ngIf="product.quantity > 0" class="status">
+        Є в наявності
+      </p>
+
+      <p *ngIf="product.quantity === 0" class="status">
+        Немає в наявності
+      </p>
+
+      <button (click)="deleteProduct(i)">
+        Видалити
+      </button>
+    </div>
+  </div>
+</div>

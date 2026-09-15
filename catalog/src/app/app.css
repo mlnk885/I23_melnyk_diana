@@ -1,0 +1,85 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.counter {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.form {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form h2 {
+  margin-top: 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form button {
+  background: #333;
+  color: white;
+}
+
+.form button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.products {
+  display: grid;
+  gap: 20px;
+}
+
+.product {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid;
+}
+
+.available {
+  border-color: green;
+  background: #f0fff0;
+}
+
+.unavailable {
+  border-color: red;
+  background: #fff0f0;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.product button {
+  background: #d33;
+  color: white;
+}
