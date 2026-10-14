@@ -1,0 +1,33 @@
+
+.header {
+  background: #1e293b;
+  color: white;
+  padding: 24px 40px;
+}
+
+.header h1 {
+  margin: 0 0 20px;
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
