@@ -662,3 +662,116 @@ a {
     padding: 20px;
   }
 }
+
+/* Практична робота №9 */
+
+.practice-container {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.practice-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.practice-label {
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.practice-card h1 {
+  margin: 15px 0;
+  font-size: 30px;
+  color: #0f172a;
+}
+
+.practice-description {
+  margin-bottom: 30px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+  color: #1e293b;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: 2px solid #22c55e;
+  border-color: #22c55e;
+}
+
+.request-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.request-form button:hover {
+  background: #15803d;
+}
+
+.request-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.success {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.student-info {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 14px;
+}
