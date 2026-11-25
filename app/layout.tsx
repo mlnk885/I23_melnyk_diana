@@ -23,12 +23,13 @@ export default function RootLayout({
           </Link>
 
           <nav className="main-nav">
-            <Link href="/">Головна</Link>
-            <Link href="/catalog">Каталог</Link>
-            <Link href="/catalog/smartphones">Смартфони</Link>
-            <Link href="/catalog/laptops">Ноутбуки</Link>
-            <Link href="/contacts">Контакти</Link>
-          </nav>
+  <Link href="/">Головна</Link>
+  <Link href="/catalog">Каталог</Link>
+  <Link href="/catalog/smartphones">Смартфони</Link>
+  <Link href="/catalog/laptops">Ноутбуки</Link>
+  <Link href="/form">Замовлення</Link>
+  <Link href="/contacts">Контакти</Link>
+</nav>
         </header>
 
         {children}
